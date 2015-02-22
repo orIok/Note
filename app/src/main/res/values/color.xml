@@ -1,4 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="StatusGrey">#776b5b</color>
+    <color name="RedStatusbar">#D32F2F</color>
+    <color name="PinkStatusbar">#C2185B</color>
+    <color name="PurpleStatusbar">#7B1FA2</color>
+    <color name="DeepPurpleStatusbar">#512DA8</color>
+    <color name="IndigoStatusbar">#303F9F</color>
+    <color name="BlueStatusbar">#1976D2</color>
+    <color name="LightBlueStatusbar">#0288D1</color>
+    <color name="CyanStatusbar">#0097A7</color>
+    <color name="TealStatusbar">#00796B</color>
+    <color name="GreenStatusbar">#388E3C</color>
+    <color name="LightGreenStatusbar">#689F38</color>
+    <color name="LimeStatusbar">#AFB42B</color>
+    <color name="YellowStatusbar">#FBC02D</color>
+    <color name="AmberStatusbar">#FFA000</color>
+    <color name="OrangeStatusbar">#F57C00</color>
+    <color name="DeepOrangeStatusbar">#E64A19</color>
+    <color name="BrownStatusbar">#5D4037</color>
+    <color name="GreyStatusbar">#616161</color>
+    <color name="BlueGreyStatusbar">#455A64</color>
+
+    <color name="RedActionBar">#F44336</color>
+    <color name="PinkActionBar">#E91E63</color>
+    <color name="PurpleActionBar">#9C27B0</color>
+    <color name="DeepPurpleActionBar">#673AB7</color>
+    <color name="IndigoActionBar">#3F51B5</color>
+    <color name="BlueActionBar">#2196F3</color>
+    <color name="LightBlueActionBar">#03A9F4</color>
+    <color name="CyanActionBar">#00BCD4</color>
+    <color name="TealActionBar">#009688</color>
+    <color name="GreenActionBar">#4CAF50</color>
+    <color name="LightGreenActionBar">#8BC34A</color>
+    <color name="LimeActionBar">#CDDC39</color>
+    <color name="YellowActionBar">#FFEB3B</color>
+    <color name="AmberActionBar">#FFC107</color>
+    <color name="OrangeActionBar">#FF9800</color>
+    <color name="DeepOrangeActionBar">#FF5722</color>
+    <color name="BrownActionBar">#795548</color>
+    <color name="GreyActionBar">#9E9E9E</color>
+    <color name="BlueGreyActionBar">#607D8B</color>
+
+    <color name="Cursor">#ff000000</color>
+    <color name="MainBackground">#ffdfe0cb</color>
+
+    <array name="Colors">
+        <item>@color/RedStatusbar</item>
+        <item>@color/PinkStatusbar</item>
+        <item>@color/PurpleStatusbar</item>
+        <item>@color/DeepPurpleStatusbar</item>
+        <item>@color/IndigoStatusbar</item>
+        <item>@color/BlueStatusbar</item>
+        <item>@color/LightBlueStatusbar</item>
+        <item>@color/CyanStatusbar</item>
+        <item>@color/TealStatusbar</item>
+        <item>@color/GreenStatusbar</item>
+        <item>@color/LightGreenStatusbar</item>
+        <item>@color/LimeStatusbar</item>
+        <item>@color/YellowStatusbar</item>
+        <item>@color/AmberStatusbar</item>
+        <item>@color/OrangeStatusbar</item>
+        <item>@color/DeepOrangeStatusbar</item>
+        <item>@color/BrownStatusbar</item>
+        <item>@color/GreyStatusbar</item>
+        <item>@color/BlueGreyStatusbar</item>
+    </array>
+
 </resources>

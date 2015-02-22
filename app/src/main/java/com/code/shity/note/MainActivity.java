@@ -1,31 +1,75 @@
 package com.code.shity.note;
 
 import android.app.ActionBar;
-import android.app.ActionBar.Tab;
 import android.app.Activity;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.Window;
-import android.view.WindowManager;
-import android.widget.ArrayAdapter;
+import android.widget.AdapterView;
+import android.widget.ListView;
+
+import java.util.ArrayList;
 
 
 public class MainActivity extends Activity {
-
+    public static final String NOTE_EXTRA = "NOTE_EXTRA";
     private ActionBar mActionBar;
+    ListView mListView;
+    NoteAdapter mNoteAdapter;
+    ArrayList<Note> notes;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        notes = new ArrayList<Note>();
+        /*test*/
+        notes.add(new Note()
+                .setName("Test1")
+                .setNote("BLABLABLBLABLAasdsadadadasdasdasadsaaaaaaaaaaaaaaaaaaaaaaaBLAA")
+                .setTag("testtag")
+                .setColorActionBar(R.color.RedActionBar)
+                .setColorStatusBar(R.color.RedStatusbar));
+
+        notes.add(new Note()
+                .setName("Test2")
+                .setNote("BLABLABLBLABLAasdsadadadasdasdasadsaaaaaaaaaaaaaaaaaaaaaaaBLAA")
+                .setTag("testtag")
+                .setColorActionBar(R.color.BrownActionBar)
+                .setColorStatusBar(R.color.BrownStatusbar));
+
+        notes.add(new Note()
+                .setName("Test3")
+                .setNote("BLABLABLBLABLAasdsadadadasdasdasadsaaaaaaaaaaaaaaaaaaaaaaaBLAA")
+                .setTag("testtag")
+                .setColorActionBar(R.color.CyanActionBar)
+                .setColorStatusBar(R.color.CyanStatusbar));
+
+        notes.add(new Note()
+                .setName("Test4")
+                .setNote("BLABLAasdsadadadasdasdasadsaaaaaaaaaaaaaaaaaaaaaaaBLA")
+                .setTag("testtag")
+                .setColorActionBar(R.color.DeepOrangeActionBar)
+                .setColorStatusBar(R.color.DeepOrangeStatusbar));
+        /*/test*/
+
+        mNoteAdapter = new NoteAdapter(this, notes);
+        mListView = (ListView)findViewById(R.id.list_view);
+        mListView.setAdapter(mNoteAdapter);
+        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(MainActivity.this, NoteActivity.class);
+                intent.putExtra(NOTE_EXTRA, notes.get(position));
+                startActivity(intent);
+            }
+        });
 
         ActionBar bar = getActionBar();
-
-
 
         // Встановлення кольору статус і екшенбара
         bar.setIcon(getResources().getDrawable(R.drawable.ic_launcher));
@@ -34,11 +78,11 @@ public class MainActivity extends Activity {
 //        bar.setDisplayHomeAsUpEnabled(true); // стрєлочка назад
 
 
-        bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#887b68"))); //Brown
+        bar.setBackgroundDrawable(getResources().getDrawable(R.color.BrownActionBar)); //ActionBar
         Window window = getWindow();
-        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-        window.setStatusBarColor(getResources().getColor(R.color.StatusGrey)); //DarckBrown
+//        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+//        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+        window.setStatusBarColor(getResources().getColor(R.color.BrownStatusbar)); //StatusBar //DarckBrown
 
 
 
@@ -77,24 +121,31 @@ public class MainActivity extends Activity {
     }
 
 
+
+
+
+
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+       // getMenuInflater().inflate(R.menu.menu_main, menu);
         getMenuInflater().inflate(R.menu.main_activity_actions, menu);
+        menu.findItem(R.id.action_search).getActionView();
 
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
+        switch (id) {
+            case R.id.action_add:
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+                Intent i = new Intent(MainActivity.this, NoteActivity.class);
+                Note note = new Note();
+                i.putExtra(NOTE_EXTRA, note);
+                startActivity(i);
+                return true;
         }
 
         return super.onOptionsItemSelected(item);
