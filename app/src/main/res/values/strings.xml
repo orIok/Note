@@ -1,36 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Нотатка</string>
-    <string name="action_settings">Налаштування</string>
-    <string name="action_search">Пошук</string>
-    <string name="action_add">Додати</string>
-    <string name="name_hint">Назва</string>
-    <string name="note_hint">Нотатка</string>
-    <string name="tags">Тег:</string>
-    <string name="color">Колір</string>
-    <string name="picture">Картинка</string>
-    <string name="chose_color">Колір нотатки</string>
-    <string-array name="ColorsName">
-        <item>Червоний</item>
-        <item>Рожевий</item>
-        <item>Фіолетовий</item>
-        <item>Темно-фіолетовий</item>
-        <item>Індиго</item>
-        <item>Синій</item>
-        <item>Світло-синій</item>
-        <item>Голубий</item>
-        <item>Колір червоного моря</item>
-        <item>Зелений</item>
-        <item>Світло-зелений</item>
-        <item>Лайм</item>
-        <item>Жовтий</item>
-        <item>Бурштиновий</item>
-        <item>Оранжевий</item>
-        <item>Темно-оранжевий</item>
-        <item>Коричневий</item>
-        <item>Сірий</item>
-        <item>Блакитно-сірий</item>
-    </string-array>
+    <string name="app_name">Note</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="action_add">Add</string>
 
 </resources>
