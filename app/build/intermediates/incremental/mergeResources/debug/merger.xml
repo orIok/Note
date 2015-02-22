@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="1.2.2"><source path="C:\Users\Alexander\Documents\GitHub\Note\app\build\intermediates\exploded-aar\it.sephiroth.android.library.horizontallistview\hlistview\1.2.2\res"><file name="hlv_overscroll_edge" path="C:\Users\Alexander\Documents\GitHub\Note\app\build\intermediates\exploded-aar\it.sephiroth.android.library.horizontallistview\hlistview\1.2.2\res\drawable-hdpi\hlv_overscroll_edge.png" qualifiers="hdpi-v4" type="drawable"/><file name="hlv_overscroll_glow" path="C:\Users\Alexander\Documents\GitHub\Note\app\build\intermediates\exploded-aar\it.sephiroth.android.library.horizontallistview\hlistview\1.2.2\res\drawable-hdpi\hlv_overscroll_glow.png" qualifiers="hdpi-v4" type="drawable"/><file name="hlv_overscroll_edge" path="C:\Users\Alexander\Documents\GitHub\Note\app\build\intermediates\exploded-aar\it.sephiroth.android.library.horizontallistview\hlistview\1.2.2\res\drawable-ldpi\hlv_overscroll_edge.png" qualifiers="ldpi-v4" type="drawable"/><file name="hlv_overscroll_glow" path="C:\Users\Alexander\Documents\GitHub\Note\app\build\intermediates\exploded-aar\it.sephiroth.android.library.horizontallistview\hlistview\1.2.2\res\drawable-ldpi\hlv_overscroll_glow.png" qualifiers="ldpi-v4" type="drawable"/><file name="hlv_overscroll_edge" path="C:\Users\Alexander\Documents\GitHub\Note\app\build\intermediates\exploded-aar\it.sephiroth.android.library.horizontallistview\hlistview\1.2.2\res\drawable-mdpi\hlv_overscroll_edge.png" qualifiers="mdpi-v4" type="drawable"/><file name="hlv_overscroll_glow" path="C:\Users\Alexander\Documents\GitHub\Note\app\build\intermediates\exploded-aar\it.sephiroth.android.library.horizontallistview\hlistview\1.2.2\res\drawable-mdpi\hlv_overscroll_glow.png" qualifiers="mdpi-v4" type="drawable"/><file name="hlv_overscroll_edge" path="C:\Users\Alexander\Documents\GitHub\Note\app\build\intermediates\exploded-aar\it.sephiroth.android.library.horizontallistview\hlistview\1.2.2\res\drawable-xhdpi\hlv_overscroll_edge.png" qualifiers="xhdpi-v4" type="drawable"/><file name="hlv_overscroll_glow" path="C:\Users\Alexander\Documents\GitHub\Note\app\build\intermediates\exploded-aar\it.sephiroth.android.library.horizontallistview\hlistview\1.2.2\res\drawable-xhdpi\hlv_overscroll_glow.png" qualifiers="xhdpi-v4" type="drawable"/><file path="C:\Users\Alexander\Documents\GitHub\Note\app\build\intermediates\exploded-aar\it.sephiroth.android.library.horizontallistview\hlistview\1.2.2\res\values\values.xml" qualifiers=""><attr format="reference" name="hlv_expandableListViewStyle"/><attr format="dimension" name="hlv_listPreferredItemWidth"/><declare-styleable name="HListView">
+        <attr name="android:entries"/>
+        <attr name="android:divider"/>
+        <attr format="dimension" name="hlv_dividerWidth"/>
+        <attr format="boolean" name="hlv_headerDividersEnabled"/>
+        <attr format="boolean" name="hlv_footerDividersEnabled"/>
+        <attr format="reference|color" name="hlv_overScrollHeader"/>
+        <attr format="reference|color" name="hlv_overScrollFooter"/>
+
+        <!--
+		When "wrap_content" is used as value of the layout_height property.
+		Pass the position, inside the adapter, of the view being used to measure the view
+		or '-1' to use the default behavior ( default is -1 )
+        -->
+        <attr format="integer" name="hlv_measureWithChild"/>
+    </declare-styleable><declare-styleable name="AbsHListView">
+        <attr name="android:listSelector"/>
+        <attr name="android:smoothScrollbar"/>
+        <attr name="android:drawSelectorOnTop"/>
+        <attr name="android:cacheColorHint"/>
+        <attr name="android:scrollingCache"/>
+        <attr name="android:choiceMode"/>
+        <attr format="boolean" name="hlv_stackFromRight"/>
+        <attr name="hlv_transcriptMode">
+            <enum name="disabled" value="0"/>
+            <enum name="normal" value="1"/>
+            <enum name="alwaysScroll" value="2"/>
+        </attr>
+    </declare-styleable><declare-styleable name="ExpandableHListView">
+        <attr name="hlv_indicatorGravity">
+            <flag name="top" value="0x30"/>
+            <flag name="bottom" value="0x50"/>
+            <flag name="left" value="0x03"/>
+            <flag name="right" value="0x05"/>
+            <flag name="center_vertical" value="0x10"/>
+            <flag name="fill_vertical" value="0x70"/>
+            <flag name="center_horizontal" value="0x01"/>
+            <flag name="fill_horizontal" value="0x07"/>
+            <flag name="center" value="0x11"/>
+            <flag name="fill" value="0x77"/>
+            <flag name="clip_vertical" value="0x80"/>
+            <flag name="clip_horizontal" value="0x08"/>
+            <flag name="start" value="0x00800003"/>
+            <flag name="end" value="0x00800005"/>
+        </attr>
+        <attr name="hlv_childIndicatorGravity">
+            <flag name="top" value="0x30"/>
+            <flag name="bottom" value="0x50"/>
+            <flag name="left" value="0x03"/>
+            <flag name="right" value="0x05"/>
+            <flag name="center_vertical" value="0x10"/>
+            <flag name="fill_vertical" value="0x70"/>
+            <flag name="center_horizontal" value="0x01"/>
+            <flag name="fill_horizontal" value="0x07"/>
+            <flag name="center" value="0x11"/>
+            <flag name="fill" value="0x77"/>
+            <flag name="clip_vertical" value="0x80"/>
+            <flag name="clip_horizontal" value="0x08"/>
+            <flag name="start" value="0x00800003"/>
+            <flag name="end" value="0x00800005"/>
+        </attr>
+        <attr format="reference|color" name="hlv_childDivider"/>
+        <attr format="reference" name="hlv_groupIndicator"/>
+        <attr format="reference" name="hlv_childIndicator"/>
+
+        <!-- after gravity for the indicator has been set -->
+        <!-- a custom padding can be set -->
+        <attr format="dimension" name="hlv_indicatorPaddingLeft"/>
+        <attr format="dimension" name="hlv_indicatorPaddingTop"/>
+
+        <!-- after gravity for the child indicator has been set -->
+        <!-- a custom padding can be set -->
+        <attr format="dimension" name="hlv_childIndicatorPaddingLeft"/>
+        <attr format="dimension" name="hlv_childIndicatorPaddingTop"/>
+    </declare-styleable><attr format="reference" name="hlv_listViewStyle"/><attr format="reference" name="hlv_absHListViewStyle"/></file></source></dataSet><dataSet config="main"><source path="C:\Users\Alexander\Documents\GitHub\Note\app\src\main\res"><file name="cursor_color" path="C:\Users\Alexander\Documents\GitHub\Note\app\src\main\res\drawable\cursor_color.xml" qualifiers="" type="drawable"/><file name="ic_camera" path="C:\Users\Alexander\Documents\GitHub\Note\app\src\main\res\drawable\ic_camera.png" qualifiers="" type="drawable"/><file name="ic_palette" path="C:\Users\Alexander\Documents\GitHub\Note\app\src\main\res\drawable\ic_palette.png" qualifiers="" type="drawable"/><file name="ic_launcher" path="C:\Users\Alexander\Documents\GitHub\Note\app\src\main\res\drawable-hdpi\ic_launcher.png" qualifiers="hdpi-v4" type="drawable"/><file name="ic_launcher" path="C:\Users\Alexander\Documents\GitHub\Note\app\src\main\res\drawable-mdpi\ic_launcher.png" qualifiers="mdpi-v4" type="drawable"/><file name="ic_launcher" path="C:\Users\Alexander\Documents\GitHub\Note\app\src\main\res\drawable-xhdpi\ic_launcher.png" qualifiers="xhdpi-v4" type="drawable"/><file name="ic_launcher" path="C:\Users\Alexander\Documents\GitHub\Note\app\src\main\res\drawable-xxhdpi\ic_launcher.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="activity_main" path="C:\Users\Alexander\Documents\GitHub\Note\app\src\main\res\layout\activity_main.xml" qualifiers="" type="layout"/><file name="add_note" path="C:\Users\Alexander\Documents\GitHub\Note\app\src\main\res\layout\add_note.xml" qualifiers="" type="layout"/><file name="note_item" path="C:\Users\Alexander\Documents\GitHub\Note\app\src\main\res\layout\note_item.xml" qualifiers="" type="layout"/><file name="add_note_menu" path="C:\Users\Alexander\Documents\GitHub\Note\app\src\main\res\menu\add_note_menu.xml" qualifiers="" type="menu"/><file name="main_activity_actions" path="C:\Users\Alexander\Documents\GitHub\Note\app\src\main\res\menu\main_activity_actions.xml" qualifiers="" type="menu"/><file name="menu_main" path="C:\Users\Alexander\Documents\GitHub\Note\app\src\main\res\menu\menu_main.xml" qualifiers="" type="menu"/><file path="C:\Users\Alexander\Documents\GitHub\Note\app\src\main\res\values\color.xml" qualifiers=""><color name="OrangeStatusbar">#F57C00</color><color name="GreenStatusbar">#388E3C</color><color name="LightGreenActionBar">#8BC34A</color><color name="IndigoActionBar">#3F51B5</color><color name="DeepPurpleStatusbar">#512DA8</color><color name="AmberStatusbar">#FFA000</color><array name="Colors">
+        <item>@color/RedStatusbar</item>
+        <item>@color/PinkStatusbar</item>
+        <item>@color/PurpleStatusbar</item>
+        <item>@color/DeepPurpleStatusbar</item>
+        <item>@color/IndigoStatusbar</item>
+        <item>@color/BlueStatusbar</item>
+        <item>@color/LightBlueStatusbar</item>
+        <item>@color/CyanStatusbar</item>
+        <item>@color/TealStatusbar</item>
+        <item>@color/GreenStatusbar</item>
+        <item>@color/LightGreenStatusbar</item>
+        <item>@color/LimeStatusbar</item>
+        <item>@color/YellowStatusbar</item>
+        <item>@color/AmberStatusbar</item>
+        <item>@color/OrangeStatusbar</item>
+        <item>@color/DeepOrangeStatusbar</item>
+        <item>@color/BrownStatusbar</item>
+        <item>@color/GreyStatusbar</item>
+        <item>@color/BlueGreyStatusbar</item>
+    </array><color name="LightBlueActionBar">#03A9F4</color><color name="PurpleStatusbar">#7B1FA2</color><color name="PurpleActionBar">#9C27B0</color><color name="RedStatusbar">#D32F2F</color><color name="OrangeActionBar">#FF9800</color><color name="BlueActionBar">#2196F3</color><color name="GreenActionBar">#4CAF50</color><color name="BlueStatusbar">#1976D2</color><color name="CyanActionBar">#00BCD4</color><color name="LimeActionBar">#CDDC39</color><color name="AmberActionBar">#FFC107</color><color name="PinkStatusbar">#C2185B</color><color name="GreyStatusbar">#616161</color><color name="BlueGreyStatusbar">#455A64</color><color name="RedActionBar">#F44336</color><color name="PinkActionBar">#E91E63</color><color name="LightBlueStatusbar">#0288D1</color><color name="BlueGreyActionBar">#607D8B</color><color name="BrownStatusbar">#5D4037</color><color name="LightGreenStatusbar">#689F38</color><color name="TealActionBar">#009688</color><color name="BrownActionBar">#795548</color><color name="DeepPurpleActionBar">#673AB7</color><color name="MainBackground">#ffdfe0cb</color><color name="GreyActionBar">#9E9E9E</color><color name="Cursor">#ff000000</color><color name="TealStatusbar">#00796B</color><color name="YellowStatusbar">#FBC02D</color><color name="CyanStatusbar">#0097A7</color><color name="DeepOrangeStatusbar">#E64A19</color><color name="IndigoStatusbar">#303F9F</color><color name="DeepOrangeActionBar">#FF5722</color><color name="YellowActionBar">#FFEB3B</color><color name="LimeStatusbar">#AFB42B</color></file><file path="C:\Users\Alexander\Documents\GitHub\Note\app\src\main\res\values\dimens.xml" qualifiers=""><dimen name="activity_horizontal_margin">16dp</dimen><dimen name="activity_vertical_margin">16dp</dimen></file><file path="C:\Users\Alexander\Documents\GitHub\Note\app\src\main\res\values\strings.xml" qualifiers=""><string name="name_hint">Назва</string><string name="chose_color">Колір нотатки</string><string name="action_settings">Налаштування</string><string name="note_hint">Нотатка</string><string name="app_name">Нотатка</string><string-array name="ColorsName">
+        <item>Червоний</item>
+        <item>Рожевий</item>
+        <item>Фіолетовий</item>
+        <item>Темно-фіолетовий</item>
+        <item>Індиго</item>
+        <item>Синій</item>
+        <item>Світло-синій</item>
+        <item>Голубий</item>
+        <item>Колір червоного моря</item>
+        <item>Зелений</item>
+        <item>Світло-зелений</item>
+        <item>Лайм</item>
+        <item>Жовтий</item>
+        <item>Бурштиновий</item>
+        <item>Оранжевий</item>
+        <item>Темно-оранжевий</item>
+        <item>Коричневий</item>
+        <item>Сірий</item>
+        <item>Блакитно-сірий</item>
+    </string-array><string name="action_add">Додати</string><string name="action_search">Пошук</string><string name="tags">Тег:</string><string name="picture">Картинка</string><string name="color">Колір</string></file><file path="C:\Users\Alexander\Documents\GitHub\Note\app\src\main\res\values\styles.xml" qualifiers=""><style name="AppTheme" parent="android:Theme.Material.Light.DarkActionBar">
+
+    </style></file><file path="C:\Users\Alexander\Documents\GitHub\Note\app\src\main\res\values-v21\styles.xml" qualifiers="v21"><style name="AppTheme" parent="android:Theme.Material.Light">
+
+    </style></file><file path="C:\Users\Alexander\Documents\GitHub\Note\app\src\main\res\values-w820dp\dimens.xml" qualifiers="w820dp-v13"><dimen name="activity_horizontal_margin">64dp</dimen></file><file name="color_item" path="C:\Users\Alexander\Documents\GitHub\Note\app\src\main\res\layout\color_item.xml" qualifiers="" type="layout"/></source><source path="C:\Users\Alexander\Documents\GitHub\Note\app\build\generated\res\rs\debug"/><source path="C:\Users\Alexander\Documents\GitHub\Note\app\build\generated\res\generated\debug"/></dataSet><dataSet config="debug"><source path="C:\Users\Alexander\Documents\GitHub\Note\app\src\debug\res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="AbsHListView"><attr name="android:listSelector"/><attr name="android:smoothScrollbar"/><attr name="android:drawSelectorOnTop"/><attr name="android:cacheColorHint"/><attr name="android:scrollingCache"/><attr name="android:choiceMode"/><attr format="boolean" name="hlv_stackFromRight"/><attr name="hlv_transcriptMode"><enum name="disabled" value="0"/><enum name="normal" value="1"/><enum name="alwaysScroll" value="2"/></attr></declare-styleable><declare-styleable name="HListView"><attr name="android:entries"/><attr name="android:divider"/><attr format="dimension" name="hlv_dividerWidth"/><attr format="boolean" name="hlv_headerDividersEnabled"/><attr format="boolean" name="hlv_footerDividersEnabled"/><attr format="reference|color" name="hlv_overScrollHeader"/><attr format="reference|color" name="hlv_overScrollFooter"/><attr format="integer" name="hlv_measureWithChild"/></declare-styleable><declare-styleable name="ExpandableHListView"><attr name="hlv_indicatorGravity"><flag name="top" value="0x30"/><flag name="bottom" value="0x50"/><flag name="left" value="0x03"/><flag name="right" value="0x05"/><flag name="center_vertical" value="0x10"/><flag name="fill_vertical" value="0x70"/><flag name="center_horizontal" value="0x01"/><flag name="fill_horizontal" value="0x07"/><flag name="center" value="0x11"/><flag name="fill" value="0x77"/><flag name="clip_vertical" value="0x80"/><flag name="clip_horizontal" value="0x08"/><flag name="start" value="0x00800003"/><flag name="end" value="0x00800005"/></attr><attr name="hlv_childIndicatorGravity"><flag name="top" value="0x30"/><flag name="bottom" value="0x50"/><flag name="left" value="0x03"/><flag name="right" value="0x05"/><flag name="center_vertical" value="0x10"/><flag name="fill_vertical" value="0x70"/><flag name="center_horizontal" value="0x01"/><flag name="fill_horizontal" value="0x07"/><flag name="center" value="0x11"/><flag name="fill" value="0x77"/><flag name="clip_vertical" value="0x80"/><flag name="clip_horizontal" value="0x08"/><flag name="start" value="0x00800003"/><flag name="end" value="0x00800005"/></attr><attr format="reference|color" name="hlv_childDivider"/><attr format="reference" name="hlv_groupIndicator"/><attr format="reference" name="hlv_childIndicator"/><attr format="dimension" name="hlv_indicatorPaddingLeft"/><attr format="dimension" name="hlv_indicatorPaddingTop"/><attr format="dimension" name="hlv_childIndicatorPaddingLeft"/><attr format="dimension" name="hlv_childIndicatorPaddingTop"/></declare-styleable></configuration></mergedItems></merger>

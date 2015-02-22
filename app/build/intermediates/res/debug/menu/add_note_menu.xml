@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/color"
+          android:title="@string/color"
+          android:icon="@drawable/ic_palette"
+          android:showAsAction="always"
+        />
+    <item
+        android:id="@+id/picture"
+        android:title="@string/picture"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_camera"
+        />
+</menu><!-- From: file:/C:/Users/Alexander/Documents/GitHub/Note/app/src/main/res/menu/add_note_menu.xml -->

@@ -63,7 +63,7 @@ public class NoteActivity extends Activity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 findViewById(R.id.list_colors).setVisibility(View.GONE);
                 setBarColor(mColors[position], mColors[position]);
-            }
+            };
         });
 
     }
@@ -75,7 +75,7 @@ public class NoteActivity extends Activity {
             case R.id.color: //Кнопка вибору кольору
                 ColorPickFragment dialog = new ColorPickFragment();
                 dialog.show(getFragmentManager(), "Colors");
-                findViewById(R.id.horizontalScrollView).setVisibility(View.GONE);
+                //findViewById(R.id.horizontalScrollView).setVisibility(View.GONE);
                 findViewById(R.id.list_colors).setVisibility(View.VISIBLE);
                 break;
 

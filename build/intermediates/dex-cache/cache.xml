@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Alexander\Documents\GitHub\Note\app\build\intermediates\exploded-aar\it.sephiroth.android.library.horizontallistview\hlistview\1.2.2\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="698658e3af1e3f2a5b199e0d09ee6c57793405bd">
+        <dex dex="C:\Users\Alexander\Documents\GitHub\Note\app\build\intermediates\pre-dexed\debug\classes-f48f5d8e11426c4f4ef97e84b8b8f067ac2b6222.jar" />
+    </item>
+    <item
+        jar="C:\AndroidDevelop\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="C:\Users\Alexander\Documents\GitHub\Note\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0-cb92dbcb0885a389f6f718eb786efc832fac5e5d.jar" />
+    </item>
+
+</items>
